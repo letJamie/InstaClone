@@ -47,6 +47,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qo6-aP-C9h"/>
                     <connections>
                         <outlet property="emailText" destination="s2G-mj-EbW" id="f8h-QU-pnp"/>
                         <outlet property="passwordText" destination="z8r-iH-UYv" id="Cfp-Ol-CIA"/>
@@ -60,7 +61,7 @@
         <!--Upload-->
         <scene sceneID="Kbs-mV-jcB">
             <objects>
-                <viewController id="m5T-k3-oy1" sceneMemberID="viewController">
+                <viewController id="m5T-k3-oy1" customClass="UploadViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i7t-aF-R6E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,10 +74,40 @@
             </objects>
             <point key="canvasLocation" x="2078" y="459"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="ja0-w3-KPd">
+            <objects>
+                <viewController id="8xo-2b-AZc" customClass="SettingsViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VHl-QK-Ir3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-Nt-son">
+                                <rect key="frame" x="149" y="363" width="116" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="8xo-2b-AZc" eventType="touchUpInside" id="mhe-Ji-fwY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DlM-if-l3g"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="loc-7Z-JI1"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="53e-eJ-6OU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pb9-7o-4RJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079.7101449275365" y="1130.3571428571429"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="FhP-gg-E41">
             <objects>
-                <viewController id="LdC-oB-aSM" sceneMemberID="viewController">
+                <viewController id="LdC-oB-aSM" customClass="FeedViewController" customModule="InstaClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhh-td-aFR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +132,7 @@
                     <connections>
                         <segue destination="LdC-oB-aSM" kind="relationship" relationship="viewControllers" id="VXT-FJ-kEY"/>
                         <segue destination="m5T-k3-oy1" kind="relationship" relationship="viewControllers" id="oXK-gI-jTI"/>
+                        <segue destination="8xo-2b-AZc" kind="relationship" relationship="viewControllers" id="gcG-i4-INB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCm-1O-ohF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -111,5 +143,6 @@
     <resources>
         <image name="cloud.fill" catalog="system" width="128" height="84"/>
         <image name="f.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="s.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

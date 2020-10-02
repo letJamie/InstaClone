@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		7D58127A2526136C006CB16B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D5812792526136C006CB16B /* Assets.xcassets */; };
 		7D58127D2526136C006CB16B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D58127B2526136C006CB16B /* LaunchScreen.storyboard */; };
 		7D58128525261717006CB16B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D58128425261717006CB16B /* GoogleService-Info.plist */; };
+		7D5812872527615D006CB16B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5812862527615D006CB16B /* FeedViewController.swift */; };
+		7D58128925276185006CB16B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58128825276185006CB16B /* UploadViewController.swift */; };
+		7D58128B252761B5006CB16B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58128A252761B5006CB16B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		7D58127C2526136C006CB16B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D58127E2526136C006CB16B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D58128425261717006CB16B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D5812862527615D006CB16B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7D58128825276185006CB16B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		7D58128A252761B5006CB16B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				7D5812702526136B006CB16B /* AppDelegate.swift */,
 				7D5812722526136B006CB16B /* SceneDelegate.swift */,
 				7D5812742526136B006CB16B /* ViewController.swift */,
+				7D5812862527615D006CB16B /* FeedViewController.swift */,
+				7D58128825276185006CB16B /* UploadViewController.swift */,
+				7D58128A252761B5006CB16B /* SettingsViewController.swift */,
 				7D5812762526136B006CB16B /* Main.storyboard */,
 				7D5812792526136C006CB16B /* Assets.xcassets */,
 				7D58127B2526136C006CB16B /* LaunchScreen.storyboard */,
@@ -83,7 +92,6 @@
 				010D5EBA0223761DDFB07AEB /* Pods-InstaClone.debug.xcconfig */,
 				31F7BA6FE2FE277CA7842B55 /* Pods-InstaClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5812752526136B006CB16B /* ViewController.swift in Sources */,
+				7D58128925276185006CB16B /* UploadViewController.swift in Sources */,
 				7D5812712526136B006CB16B /* AppDelegate.swift in Sources */,
+				7D5812872527615D006CB16B /* FeedViewController.swift in Sources */,
 				7D5812732526136B006CB16B /* SceneDelegate.swift in Sources */,
+				7D58128B252761B5006CB16B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
