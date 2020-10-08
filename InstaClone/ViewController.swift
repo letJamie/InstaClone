@@ -18,10 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentUser = Auth.auth().currentUser
-        if currentUser != nil {
-            performSegue(withIdentifier: "toFeedVC", sender: nil)
-        }
+      
     }
     
     @IBAction func signInClicked(_ sender: Any) {
